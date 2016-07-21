@@ -1,0 +1,10 @@
+/.idea
+the-draft.iml
+
+
+**/app/**/*.js
+**/app/**/*.map
+
+node_modules/
+
+/typings
