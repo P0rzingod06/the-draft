@@ -5,6 +5,14 @@ body {
 h1,h2,h3,h4,h5,h6 {
   color: #dedede;
 }
+.loading {
+  font-size: 3em;
+  margin: 0 auto;
+  padding-left: 45%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .blue {
 	background-color: #3498DB;
 	line-height: 2em;
