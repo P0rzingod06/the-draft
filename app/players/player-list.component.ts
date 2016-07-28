@@ -11,7 +11,7 @@ import {Player} from './player';
 export class PlayerListComponent {
 	players: Player[];
 
-	getPlayers(): IPlayer[] {
+	getPlayers(): Player[] {
 		return [{ id: 1, firstName: 'Mike', lastName: 'Gassert', logoURL: 'N/A' },
 		{id:2, firstName:'Dale', lastName:'Race', logoURL:'N/A'}]
 	}
