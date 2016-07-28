@@ -7,3 +7,8 @@ Running via npm(Assuming you have npm installed):
 
 1.  ````npm install````
 2.  ````npm start````
+
+---
+##Slack channel
+
+[the-draft.slack.com](https://the-draft.slack.com)
