@@ -8,3 +8,5 @@ import {Component} from 'angular2/core';
 export class NavBar {
 
 }
+
+//TODO: get rid of this
