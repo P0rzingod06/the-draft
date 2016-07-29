@@ -1,21 +1,26 @@
 <h1 class="text-xs-center">DRAFT PAGE</h1>
 
-
-<table class="rwd-table">
-  <thead>
-    <tr>
-      <th>Round</th>
-      <th>Drafter</th>
-      <th>DraftPick</th>
-      <th>Age</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor='#round of rounds'>
-      <td>{{round.draftRound}}</td>
-      <td>{{round.drafter}}</td>
-      <td>{{round.draftPick}}</td>
-      <td>{{round.age}}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+  <div class="component" *ngFor="#manager of managers">
+    <table class="rwd-table">
+      <thead>
+        <tr>
+          <th>Round</th>
+          <th>Drafter</th>
+          <th>DraftPick</th>
+          <th>Age</th>
+          <th>Overall #</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='#round of rounds; #i= index'>
+          <td>{{round.draftRound}}</td>
+          <td>{{round.drafter}}</td>
+          <td>{{round.draftPick}}</td>
+          <td>{{round.age}}</td>
+          <td>{{i+1}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -6,6 +6,7 @@ import {Component} from 'angular2/core';
 })
 
 export class DraftComponent {
+
 	rounds: any[] = [
 		{
 			"draftRound": 1,
@@ -30,6 +31,46 @@ export class DraftComponent {
 			"drafter": "Dale",
 			"draftPick": "Lively",
 			"age": 28
-		}]
+		},
+		{
+			"draftRound": 2,
+			"drafter": "Dale",
+			"draftPick": "Kristen Bell",
+			"age": 45
+		},
+		{
+			"draftRound": 2,
+			"drafter": "Mike",
+			"draftPick": "Emma Watson",
+			"age": 28
+		},
+		{
+			"draftRound": 2,
+			"drafter": "David",
+			"draftPick": "Margot Robbie",
+			"age": 27
+		},
+		{
+			"draftRound": 2,
+			"drafter": "Andrew",
+			"draftPick": "Jessica Alba",
+			"age": 28
+		}];
+
+	managers: any[] = [
+		{
+			"Name": "Andrew"
+		},
+		{
+			"Name": "Jake"
+		},
+		{
+			"Name": "Mike"
+		},
+		{
+			"Name": "Dale"
+		}
+
+	];
 
 }
