@@ -14,11 +14,11 @@
       </thead>
       <tbody>
         <tr *ngFor='#round of rounds; #i= index'>
-          <td>{{round.draftRound}}</td>
-          <td>{{round.drafter}}</td>
-          <td>{{round.draftPick}}</td>
-          <td>{{round.age}}</td>
-          <td>{{i+1}}</td>
+          <td data-th="Round">{{round.draftRound}}</td>
+          <td data-th="Drafter">{{round.drafter}}</td>
+          <td data-th="DraftPick">{{round.draftPick}}</td>
+          <td data-th="Age">{{round.age}}</td>
+          <td data-th="Overall">{{i+1}}</td>
         </tr>
       </tbody>
     </table>
