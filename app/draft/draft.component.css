@@ -64,11 +64,12 @@
   color: #91AA9D;
 }
 
-.container { /* Won't be needed once SASS is added and flex is enabled for bootstrap*/
+.container { /* TODO: remove once SASS is added and flex is enabled for bootstrap*/
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
+/*TODO: Need spacing between tables at iPad size*/
 .component {
   flex: 1 1 20%;
   background-color: #e30c0c;
