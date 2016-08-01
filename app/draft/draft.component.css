@@ -66,11 +66,12 @@
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   width: 100%;
 }
 .component {
-  flex: 1 1 20%;
-  background-color: #e30c0c;
+  flex: 1 1 100%;
+  background-color: gray;
+  padding-left: 3px;
 }
 
