@@ -13,10 +13,10 @@
       </thead>
       <tbody>
         <tr *ngFor='#pick of manager.picks'>
-          <td>{{pick.draftRound}}</td>
-          <td>{{manager.name}}</td>
-          <td>{{pick.draftPick}}</td>
-          <td>{{pick.age}}</td>
+          <td data-th="Round">{{pick.draftRound}}</td>
+          <td data-th="Drafter">{{manager.name}}</td>
+          <td data-th="DraftPick">{{pick.draftPick}}</td>
+          <td data-th="Age">{{pick.age}}</td>
         </tr>
       </tbody>
     </table>
