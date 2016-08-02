@@ -2,11 +2,11 @@
 
 <div class="container">
   <div class="component" *ngFor="#manager of managers">
+    <h2 class="manager">{{manager.name}}</h2>
     <table class="rwd-table">
       <thead>
         <tr>
           <th>Round</th>
-          <th>Drafter</th>
           <th>DraftPick</th>
           <th>Age</th>
         </tr>
@@ -14,7 +14,6 @@
       <tbody>
         <tr *ngFor='#pick of manager.picks'>
           <td data-th="Round">{{pick.draftRound}}</td>
-          <td data-th="Drafter">{{manager.name}}</td>
           <td data-th="DraftPick">{{pick.draftPick}}</td>
           <td data-th="Age">{{pick.age}}</td>
         </tr>
