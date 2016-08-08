@@ -9,7 +9,9 @@
     "tsc:w": "tsc -w",
     "lite": "lite-server",
     "typings": "typings",
-    "postinstall": "typings install"
+    "postinstall": "typings install",
+    "build-css": "node-sass --include-path scss app/main.scss app/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "dependencies": {
     "angular2": "2.0.0-beta.15",
@@ -23,6 +25,8 @@
   "devDependencies": {
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.10.0",
     "typescript": "^1.8.10",
     "typings": "^0.7.12"
   },
