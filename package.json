@@ -4,13 +4,13 @@
   "author": "The Squad",
   "description": "Package for all draft related UI files",
   "scripts": {
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lite": "lite-server",
-    "typings": "typings",
-    "postinstall": "typings install",
-    "build-css": "node-sass --include-path scss app/main.scss app/main.css",
+    "build": "npm run build:dev",
+    "build:dev": "webpack --progress --colors",
+    "build:prod": "webpack --config webpack.prod.config.js --progress --colors",
+    "serve:dev": "webpack-dev-server --hot --progress --colors --content-base dist/",
+    "serve:prod": "http-server dist/ --cors",
+    "start": "npm run server:dev",
+    "build-css": "node-sass --include-path scss src/main.scss src/assets/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "dependencies": {
@@ -19,16 +19,22 @@
     "es6-shim": "^0.35.0",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
-    "systemjs": "0.19.26",
     "zone.js": "0.6.10"
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
-    "lite-server": "^2.2.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "html-webpack-plugin": "^2.22.0",
+    "http-server": "^0.9.0",
     "node-sass": "^3.8.0",
     "nodemon": "^1.10.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.0",
+    "ts-loader": "^0.8.2",
     "typescript": "^1.8.10",
-    "typings": "^0.7.12"
+    "typings": "^0.7.12",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   },
   "repository": {
     "type": "git",

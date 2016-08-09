@@ -4,8 +4,8 @@ import {Player} from './player';
 
 @Component({
 	selector: 'player-list',
-	templateUrl: 'app/players/player-list.component.html',
-	styleUrls: ['app/players/player-list.component.css']
+	templateUrl: './players/player-list.component.html',
+	styleUrls: ['./players/player-list.component.css']
 })
 
 export class PlayerListComponent {
