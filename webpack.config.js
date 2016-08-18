@@ -66,7 +66,7 @@ module.exports = {
       // Support for SCSS
       {
         test: /\.scss$/,
-        loaders: ['raw-loader', 'sass-loader'], // sass-loader not scss-loader
+        loaders: ['style-loader', 'css-loader', 'sass-loader'], // sass-loader not scss-loader
         exclude: /node_modules/
       }
     ]
