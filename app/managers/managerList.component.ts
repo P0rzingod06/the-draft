@@ -1,30 +1,26 @@
-import { Component, OnInit } from 'angular2/core';
+import { Component, OnInit } from '@angular/core';
 
-import { Manager } from './manager.ts';
+import { DataGridModule } from 'primeng/primeng';
+import { PanelModule } from 'primeng/primeng';
+
+import { Manager } from './manager';
 import { ManagerService } from './manager.service';
 
-@Component ({
+@Component({
 	selector: 'manager-list',
-	templateUrl: './manager-list.html',
-	styleUrls: ['./manager-list.component.css']
+	templateUrl: 'app/managers/manager-list.component.html',
+	// styleUrls: ['app/managers/manager-list.component.css']
+	providers: [ManagerService]
 })
 
-export class ManagerListComponent implements OnInit{
+export class ManagerListComponent {
 	managers: Manager[];
 	errorMessage: string;
 
-	constructor(private ManagerService:ManagerService){
-
-	};
-
-	// getManagers(): Manager[] {
-	// 	return new Manager({_id:1,firstName:'Mike',lastName:'Ga',logoUrl:'N/A'});
-	// }
-
-	ngOninit(): void {
+	constructor(private ManagerService: ManagerService) {
 		this.ManagerService.getManagers().subscribe(
 			managers => this.managers = managers,
 			error => this.errorMessage = <any>error
-			);
-	}
+		);
+	};
 }

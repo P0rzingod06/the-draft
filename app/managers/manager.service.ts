@@ -1,5 +1,6 @@
-import { Injectable } from 'angular2/core';
-import { Http, Response } from 'angular2/http';
+import { Injectable } from '@angular/core';
+import { Http, Response } from '@angular/http';
+
 import { Observable } from 'rxjs/Observable';
 
 import { Manager } from './manager'
@@ -13,6 +14,8 @@ export class ManagerService {
 	managersURL: string = this.apiRoot + this.managersRoute;
 
     constructor(private _http: Http) { }
+
+    getManagers();
 
     getManagers(): Observable<Manager[]> {
         return this._http.get(this.managersURL)
