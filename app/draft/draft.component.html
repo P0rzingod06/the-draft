@@ -1,7 +1,7 @@
 <h1 class="text-xs-center">DRAFT PAGE</h1>
 
 <div class="container">
-  <div class="component" *ngFor="#manager of managers">
+  <div class="component" *ngFor="let manager of managers">
     <h2 class="manager">{{manager.name}}</h2>
     <table class="rwd-table">
       <thead>
@@ -12,7 +12,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor='#pick of manager.picks'>
+        <tr *ngFor='let pick of manager.picks'>
           <td data-th="Round">{{pick.draftRound}}</td>
           <td data-th="DraftPick">{{pick.draftPick}}</td>
           <td data-th="Age">{{pick.age}}</td>
