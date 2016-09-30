@@ -1,0 +1,18 @@
+<div class="manager-list">
+    <div class="grid-container">
+        <p-dataGrid [value]="managers" [columns]="3">
+            <header>
+                List of Managers
+            </header>
+            <template let-manager>
+                <div style="padding:3px">
+                    <p-panel [header]="manager.lastName" [style]="{'text-align':'center'}">
+                        <div class="car-detail">Image</div>
+                        <hr class="ui-widget-content" style="border-top:0">
+                        <i class="fa fa-search" (click)="selectCar(car)" style="cursor:pointer"></i>
+                    </p-panel>
+                </div>
+            </template>
+        </p-dataGrid>
+    </div>
+</div>s
