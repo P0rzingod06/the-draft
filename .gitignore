@@ -2,8 +2,6 @@
 the-draft.iml
 
 
-**/src/**/*.js
-**/src/**/*.map
 
 node_modules/
 
