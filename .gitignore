@@ -2,6 +2,7 @@
 the-draft.iml
 
 
+/dist/**/*.*
 
 node_modules/
 
