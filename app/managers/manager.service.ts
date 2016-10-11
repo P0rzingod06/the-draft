@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Http, Response, Headers } from '@angular/http';
 
 import { Observable } from 'rxjs/Observable';
 
@@ -13,15 +13,19 @@ export class ManagerService {
 
 	managersURL: string = this.apiRoot + this.managersRoute;
 
-    constructor(private _http: Http) { }
-
-    getManagers();
+    constructor(private http: Http) { }
 
     getManagers(): Observable<Manager[]> {
-        return this._http.get(this.managersURL)
+        return this.http.get(this.managersURL)
             .map((response: Response) => <Manager[]> response.json())
-            .do(data => console.log('All: ' +  JSON.stringify(data)))
             .catch(this.handleError);
+    }
+
+    createManager(manager: Manager): Observable<Manager[]> {
+        let headers      = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+
+        return this.http.post(this.managersURL,manager,headers)
+        .map((response: Response) => response.json().data as Manager[]);
     }
 
     private handleError(error: Response){

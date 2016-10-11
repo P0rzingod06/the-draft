@@ -1,0 +1,7 @@
+<form class="manager-create-container" (ngSubmit)="saveManager(newManager)">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="First Name" [(ngModel)]="newManager.firstName" name="first">
+        <input type="text" class="form-control" placeholder="Last Name" [(ngModel)]="newManager.lastName" name="second">
+        <button type="submit" class="btn btn-default">Save</button>
+    </div>
+</form>

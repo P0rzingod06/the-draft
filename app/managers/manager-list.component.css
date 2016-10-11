@@ -1,5 +1,3 @@
-.manager-list.grid-container {
-    width: 50%;
-    background: transparent;
-    border: none;
+.manager-list {
+	background-color: pink;
 }
