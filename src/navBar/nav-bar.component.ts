@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 
 @Component({
 	selector: 'nav-bar',
@@ -8,3 +8,5 @@ import {Component} from 'angular2/core';
 export class NavBar {
 
 }
+
+//TODO: get rid of this

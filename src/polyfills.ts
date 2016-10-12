@@ -1,4 +1,5 @@
 
 // polyfills.ts
-import 'angular2/bundles/angular2-polyfills';
-import 'rxjs';
+import 'core-js/client/shim.min'
+import 'zone.js/dist/zone';
+import 'reflect-metadata';

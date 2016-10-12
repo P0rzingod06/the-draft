@@ -1,8 +1,11 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
+
+import { ManagerListComponent } from '../managers/managerList.component';
+import { ManagerCreateComponent } from '../managers/managerCreate.component';
 
 @Component({
 	templateUrl: './dashboard/dashboard.component.html',
-	styleUrls: ['./dashboard/dashboard.component.css']
+	styles: [require('./dashboard.component.scss')]
 })
 
 export class DashboardComponent {

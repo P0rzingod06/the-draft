@@ -1,8 +1,7 @@
 //<reference path="../node_modules/angular2/typings/browser.d.ts" />
 
-import {bootstrap} from 'angular2/platform/browser';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
 
-import {AppComponent} from './app.component';
-require('!!style!css!sass!./main.scss');
-
-bootstrap(AppComponent);
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);

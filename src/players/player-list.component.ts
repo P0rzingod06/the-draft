@@ -1,11 +1,11 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 
 import {Player} from './player';
 
 @Component({
 	selector: 'player-list',
 	templateUrl: './players/player-list.component.html',
-	styleUrls: ['./players/player-list.component.css']
+	styles: [require('./player-list.component.scss')]
 })
 
 export class PlayerListComponent {

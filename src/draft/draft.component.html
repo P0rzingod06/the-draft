@@ -1,29 +1,23 @@
 <h1 class="text-xs-center">DRAFT PAGE</h1>
 
-<table class="rwd-table">
-  <tr>
-    <th>Round</th>
-    <th>Name</th>
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td data-th="Round">1</td>
-    <td data-th="Name">Blake Lively</td>
-    <td data-th="Age">28</td>
-  </tr>
-  <tr>
-    <td data-th="Round">2</td>
-    <td data-th="Name">Kristen Bell</td>
-    <td data-th="Age">36</td>
-  </tr>
-  <tr>
-    <td data-th="Round">3</td>
-    <td data-th="Name">Caity Lotz</td>
-    <td data-th="Age">29</td>
-  </tr>
-  <tr>
-    <td data-th="Round">4</td>
-    <td data-th="Name">Amber Heard</td>
-    <td data-th="Age">30</td>
-  </tr>
-</table>
+<div class="container">
+  <div class="component" *ngFor="let manager of managers">
+    <h2 class="manager">{{manager.name}}</h2>
+    <table class="rwd-table">
+      <thead>
+        <tr>
+          <th>Round</th>
+          <th>DraftPick</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let pick of manager.picks'>
+          <td data-th="Round">{{pick.draftRound}}</td>
+          <td data-th="DraftPick">{{pick.draftPick}}</td>
+          <td data-th="Age">{{pick.age}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
