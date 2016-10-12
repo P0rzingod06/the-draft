@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 var ENV = process.env.ENV = 'development';
 var HOST = process.env.HOST || 'localhost';
 var PORT = process.env.PORT || 8080;
@@ -18,7 +18,6 @@ var metadata = {
 module.exports = {
   // static data for index.html
   metadata: metadata,
-
   // Emit SourceMap to enhance debugging
   devtool: 'source-map',
 
