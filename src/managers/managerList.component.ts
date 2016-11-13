@@ -8,8 +8,8 @@ import { ManagerService } from './manager.service';
 
 @Component({
 	selector: 'manager-list',
-	templateUrl: 'app/managers/manager-list.component.html',
-	styleUrls: ['app/managers/manager-list.component.css'],
+	templateUrl: './managers/manager-list.component.html',
+	styles: [require('./manager-list.component.scss')],
 	providers: [ManagerService]
 })
 

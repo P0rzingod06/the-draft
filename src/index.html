@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>The Draft</title>
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css" /> -->
+    <link href="./assets/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="./assets/main.css" rel="stylesheet" /> -->
+
+    <!-- Compile all scss to one file, or only do partial scss -->
+
+  </head>
+  <base href="/">
+  <body>
+    <td-app><h1 class="loading text-xs-center">Loading...</h1></td-app>
+  </body>
+
+  <% if (webpackConfig.metadata.ENV === 'development') { %>
+  <!-- Webpack Dev Server -->
+  <script src="http://<%= webpackConfig.metadata.host %>:<%= webpackConfig.metadata.port %>/webpack-dev-server.js"></script>
+  <% } %>
+
+</html>
