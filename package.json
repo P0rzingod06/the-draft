@@ -21,6 +21,7 @@
     "watch:test": "npm run test -- --auto-watch --no-single-run",
     "watch": "npm run watch:dev"
   },
+  "license": "ISC",
   "dependencies": {
     "@angular/common": "~2.0.1",
     "@angular/compiler": "~2.0.1",
