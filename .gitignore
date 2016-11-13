@@ -2,8 +2,7 @@
 the-draft.iml
 
 
-**/app/**/*.js
-**/app/**/*.map
+/dist/**/*.*
 
 node_modules/
 

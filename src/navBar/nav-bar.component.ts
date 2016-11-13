@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
 	selector: 'nav-bar',
-	templateUrl: 'app/navBar/nav-bar.component.html'
+	templateUrl: './navBar/nav-bar.component.html'
 })
 
 export class NavBar {
