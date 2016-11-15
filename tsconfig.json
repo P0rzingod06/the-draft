@@ -9,13 +9,20 @@
     "removeComments": false,
     "noImplicitAny": false,
     "outDir": "dist",
-    "rootDir": "."
+    "rootDir": ".",
+    "types": [
+      "core-js",
+      "node",
+      "jasmine"
+    ],
+    "typeRoots": [
+      "./node_modules/@types/"
+    ]
   },
   "exclude": [
     "node_modules",
     "dist",
-    "typings/main",
-    "typings/main.d.ts"
+    "node_modules/@types"
   ],
   "atom": {
     "rewriteTsconfig": false
