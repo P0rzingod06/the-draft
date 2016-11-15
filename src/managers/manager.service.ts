@@ -8,7 +8,7 @@ import { Manager } from './manager'
 
 @Injectable()
 export class ManagerService {
-	apiRoot: string = 'http://localhost:12345';
+	apiRoot: string = 'http://the-draft-api.herokuapp.com';
 	managersRoute: string = '/api/managers';
 
 	managersURL: string = this.apiRoot + this.managersRoute;
