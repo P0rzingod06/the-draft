@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/*
+Color Palatte
+#292929
+#5B7876
+#8F9E8B
+#F2E6B6
+#412A22
+*/
+
+body {
+  background: #292929;
+  color: #eee;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: #dedede;
+}
+.loading {
+  font-size: 3em;
+  margin-top: 5em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.blue {
+	background-color: #3498DB;
+	line-height: 2em;
+}
+.red {
+	background-color: #BD4932;
+	line-height: 2em;
+}

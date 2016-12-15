@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import 'rxjs/Rx';
 // this might not be working with angular-cli
-require('!!style!css!sass!./main.scss'); // Magically to load the global scss file through webpack without style encapsulation
+// require('!!style!css!sass!./main.scss'); // Magically to load the global scss file through webpack without style encapsulation
 
 @Component({
   selector: 'app-root',
