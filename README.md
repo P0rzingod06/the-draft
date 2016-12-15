@@ -1,8 +1,9 @@
 # The Draft App
----
+
 ##Slack channel
 
 [the-draft.slack.com](https://the-draft.slack.com)
+---
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
 Run `npm install -g angular-cli` to get it
