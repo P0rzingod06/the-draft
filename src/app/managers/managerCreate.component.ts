@@ -9,7 +9,7 @@ import { ManagerService } from './manager.service';
 @Component({
 	selector: 'manager-create',
 	templateUrl: './manager-create.component.html',
-	// styleUrls: ['./manager-list.component.css']
+	// styleUrls: ['./manager-list.component.scss']
 	providers: [ManagerService]
 })
 
